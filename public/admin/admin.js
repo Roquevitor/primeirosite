@@ -138,6 +138,7 @@
             document.getElementById("img").value = "";
 
             await carregarPerfumes();
+            novo.style.display = "none";
             alert("Perfume editado com sucesso!");
           } catch (err) {
             console.error(err);
