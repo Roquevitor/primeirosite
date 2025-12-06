@@ -394,20 +394,6 @@ a:focus, button:focus, .card:focus-within{outline:3px solid rgba(212,163,115,0.1
     
 }
 
-.btnSaalvarEdicao{
-    display: none;
-    width: 50%;
-    padding: 10px;
-    background-color: rgb(53, 53, 203);
-    color: #f3eee9;
-}
-
-.btnAdicionar{
-    width: 50%;
-    padding: 10px;
-    background-color: rgb(87, 175, 36);
-    color: #f3eee9;
-}
 
 /* ====================================== */ /* MODAL CARRINHO */ /* ====================================== */ 
 .modal-carrinho{ display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(8px); justify-content: center; align-items: center; padding: 20px; z-index: 99998; } .conteudo-carrinho{ background: var(--dark2); border-radius: 18px; padding: 24px; width: 100%; max-width: 450px; max-height: 80vh; border: 1px solid rgba(212,163,115,0.25); box-shadow: var(--shadow-lg); overflow-y: auto; } .conteudo-carrinho::-webkit-scrollbar{ width: 8px; } .conteudo-carrinho::-webkit-scrollbar-thumb{ background-color: rgba(212,163,115,0.5); border-radius: 8px; } /* Lista */ #listaCarrinho li{ padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 15px; color: var(--card-bg); display: flex; justify-content: space-between; align-items: center; } .removerItemBtn{ padding: 6px 12px; background: #b84a4a; color: #fff; border-radius: 6px; border: none; cursor: pointer; transition: .2s; } .removerItemBtn:hover{ background: #993c3c; transform: scale(1.05); } /* Botão finalizar */ #finalizarCompraBtn{ margin-top: 14px; width: 100%; padding: 12px; background: var(--gold); color: #000; border-radius: 12px; font-weight: 700; border: none; cursor: pointer; transition: .25s; } #finalizarCompraBtn:hover{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(212,163,115,0.4); } .fecharCarrinhoBtn{ margin-top: 14px; width: 100%; padding: 12px; border-radius: 12px; background: var(--muted); border: none; color: #000; font-weight: 700; cursor: pointer; transition: .2s; } .fecharCarrinhoBtn:hover{ transform: translateY(-2px); }

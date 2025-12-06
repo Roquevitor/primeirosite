@@ -192,6 +192,22 @@ textarea {
     width: 165px;
 }
 
+.btnSaalvarEdicao{
+    display: none;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(53, 53, 203);
+    color: #f3eee9;
+}
+
+.btnAdicionar{
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(87, 175, 36);
+    color: #f3eee9;
+}
+
+
 
 /* ======================================================
    LISTA / SCROLL
