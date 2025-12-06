@@ -134,7 +134,6 @@
             document.getElementById("descricao").value = "";
             document.getElementById("img").value = "";
 
-            novoBotao.textContent = "Adicionar"; // volta botão ao normal
             await carregarPerfumes();
             alert("Perfume editado com sucesso!");
           } catch (err) {
@@ -147,9 +146,8 @@
   }
 
   // ------------------ CRUD ADICIONAR ------------------
-  document
-    .querySelectorAll(".btnAdicionar")
-    ?.addEventListener("click", async () => {
+  document.querySelectorAll(".btnAdicionar").forEach((btn) => {
+    btn.addEventListener("click", async () => {
       const nome = document.getElementById("nome").value.trim();
       const categoria = document.getElementById("categoria").value.trim();
       const descricao = document.getElementById("descricao").value.trim();
@@ -181,6 +179,7 @@
         alert("Erro ao adicionar perfume");
       }
     });
+  });
 
   // ------------------ FILTROS ------------------
   function preencherCategorias() {
