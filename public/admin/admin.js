@@ -101,7 +101,8 @@
         document.getElementById("img").value = perfume.img;
 
         // Altera o botão para salvar edição
-        const botao = document.querySelector(".btnAdicionar");
+        const botao = document.querySelector(".btnSaalvarEddicao");
+        botao.display = "block";
         botao.textContent = "Salvar Alterações";
 
         // Remove event listener anterior para não duplicar
