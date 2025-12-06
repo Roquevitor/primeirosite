@@ -106,8 +106,7 @@
         const botao = document.getElementById("btnSalvarEdicao");
         if (!botao) return;
 
-        botao.style.display = "flex";
-        botao.textContent = "Salvar Alterações";
+        botao.style.display = "block";
 
         const novo = botao.cloneNode(true);
         botao.parentNode.replaceChild(novo, botao);
