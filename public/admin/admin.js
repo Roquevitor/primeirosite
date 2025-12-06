@@ -101,7 +101,7 @@
         document.getElementById("img").value = perfume.img;
 
         // Altera o botão para salvar edição
-        const botao = document.getElementById("#btnSalvarEdicao");
+        const botao = document.getElementById("btnSalvarEdicao");
         botao.display = "flex";
         botao.textContent = "Salvar Alterações";
 
