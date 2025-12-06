@@ -192,7 +192,7 @@ textarea {
     width: 165px;
 }
 
-.btnSaalvarEdicao{
+#btnSalvarEdicao{
     display: none;
     width: 50%;
     padding: 10px;

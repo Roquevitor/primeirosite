@@ -101,8 +101,8 @@
         document.getElementById("img").value = perfume.img;
 
         // Altera o botão para salvar edição
-        const botao = document.querySelector(".btnSaalvarEddicao");
-        botao.display = "block";
+        const botao = document.getElementById(".btnSalvarEdicao");
+        botao.display = "flex";
         botao.textContent = "Salvar Alterações";
 
         // Remove event listener anterior para não duplicar
@@ -148,7 +148,7 @@
 
   // ------------------ CRUD ADICIONAR ------------------
   document
-    .querySelector(".btnAdicionar")
+    .querySelectorAll(".btnAdicionar")
     ?.addEventListener("click", async () => {
       const nome = document.getElementById("nome").value.trim();
       const categoria = document.getElementById("categoria").value.trim();
