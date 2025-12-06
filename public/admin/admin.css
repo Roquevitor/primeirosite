@@ -1,0 +1,271 @@
+/* ======================================================
+   BASE / CORE
+====================================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0c0c0e;
+    color: #e9e9e9;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+:root {
+    --card-bg: #141416;
+    --input-bg: #101013;
+    --border: #26262a;
+    --border-light: #303035;
+    --accent: #6c5ce7;
+    --danger: #e63946;
+    --danger-hover: #c92f3b;
+    --success1: #4CAF50;
+    --success2: #3fa046;
+}
+
+
+/* ======================================================
+   TOPBAR
+====================================================== */
+.topbar {
+    background: #141416;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 3px 14px rgba(0,0,0,0.45);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+.logout {
+    background: var(--danger);
+    padding: 10px 26px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.logout:hover {
+    background: var(--danger-hover);
+    transform: translateY(-2px);
+}
+
+
+/* ======================================================
+   LAYOUT / CONTAINER
+====================================================== */
+.container {
+    max-width: 1350px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* ======================================================
+   CARD
+====================================================== */
+.card {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 400px;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+    border: 1px solid var(--border);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 34px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+/* ======================================================
+   INPUTS / FORM
+====================================================== */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 14px;
+    background: var(--input-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    color: #f1f1f1;
+    margin-bottom: 14px;
+    font-size: 15px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.35);
+    outline: none;
+}
+
+textarea {
+    min-height: 70px;
+}
+
+
+/* ======================================================
+   BOTÕES
+====================================================== */
+.btn-add {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--success1), var(--success2));
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #58d462, #4caf50);
+}
+
+.remover {
+    background: var(--danger);
+    border: none;
+    padding: 7px 16px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.remover:hover {
+    background: var(--danger-hover);
+    transform: translateY(-2px);
+}
+
+
+/* ======================================================
+   FILTROS
+====================================================== */
+.filtros-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.filtros-box input {
+    flex: 1;
+}
+
+.filtros-box select {
+    width: 165px;
+}
+
+
+/* ======================================================
+   LISTA / SCROLL
+====================================================== */
+.lista-perfumes {
+    max-height: 520px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Scroll refinado */
+.lista-perfumes::-webkit-scrollbar {
+    width: 6px;
+}
+.lista-perfumes::-webkit-scrollbar-track {
+    background: #0f0f10;
+}
+.lista-perfumes::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 20px;
+}
+
+
+/* ======================================================
+   GRUPO DE CATEGORIAS
+====================================================== */
+.categoria-bloco {
+    margin-bottom: 28px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.categoria-titulo {
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* ======================================================
+   ITEM / PERFUME
+====================================================== */
+.perfume-item {
+    background: #0f0f11;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 16px;
+    transition: 0.25s ease;
+}
+
+.perfume-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.perfume-img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+.info p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.loading {
+    opacity: 0.7;
+    font-size: 15px;
+}

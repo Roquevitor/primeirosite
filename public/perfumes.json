@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "categoria": "Feminino",
+    "img": "data:image/jpeg;base64,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",
+    "nome": "Lattafa Yara EDP 100 ml",
+    "preco": 0,
+    "descricao": "Doce,frutado‑cremoso, levemente floral e bastante acolhedor. Ideal para quem gosta de perfumes doces, femininos e com “cheiro de conforto"
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/5/4/4/8/2/154482/1762283303_1762283303.webp",
+    "nome": "Acquadi Desire EDT 100 ml + Desodorante",
+    "preco": 0,
+    "id": 1544824,
+    "descricao": "Descrição"
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+
+
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+
+
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+    {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/5/4/1/0/145410/1736438974_1736438974.webp",
+    "nome": "Acquadi Dream EDT 100 ml",
+    "preco": 0,
+    "id": 1454109,
+    "descricao": "Descrição"
+  },
+  
+
+
+
+
+
+
+
+
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/7/3/7/8/147378/1745241034_1745241034.webp",
+    "nome": "Agatha Paris Alive EDT 100 ml",
+    "preco": 0,
+    "id": 1473780,
+    "descricao": "Descrição"
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/6/7/7/9/146779/1741980074_1741980074.webp",
+    "nome": "Agatha Paris Un Matìn à Paris EDP 100 ml",
+    "preco": 0,
+    "id": 1467796,
+    "descricao": ""
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/4/0/5/1/0/140510/1720725711_1720725711.webp",
+    "nome": "Agatha Paris Un Soir A Paris EDP 100 ml",
+    "preco": 0,
+    "id": 1405100,
+    "descricao": ""
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/1/3/9/9/2/5/139925/1721417764_1721417764.webp",
+    "nome": "Animale EDP 100 ml",
+    "preco": 0,
+    "id": 1399257,
+    "descricao": ""
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/new/9/6/2/6/3/96263/1728758611_1728758611.webp",
+    "nome": "Animale Love EDP 100 ml",
+    "preco": 0,
+    "id": 962636,
+    "descricao": ""
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://resource.megaeletronicos.com/uploads/Product/3/3/3/1/0/4/1/1/0/1/3331041101-thickbox_default.webp",
+    "nome": "Perfume Feminino Animale Seduction Femme EDP 100 ml",
+    "preco": 0,
+    "id": 3331041,
+    "descricao": ""
+  },
+  {
+    "categoria": "Feminino",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_842122-MLU76561560875_052024-F.webp",
+    "nome": "Antonio Banderas Blue Seduction EDT 80ml",
+    "preco": 0,
+    "id": 1545432,
+    "descricao": ""
+  },
+  {
+    "id": 1410327,
+    "nome": "FAKHAR ROSE FEMININO EDP 100ML",
+    "categoria": "Feminino",
+    "img": "https://images.tcdn.com.br/img/img_prod/1136581/fakhar_rose_feminino_edp_100ml_similar_linterdit_edp_givenchy_arabe_lattafa_899_2_c0843fd0b79674922751bd7dca32db7b.jpg",
+    "descricao": "f"
+  },
+  {
+    "id": 1399974,
+    "nome": "Lattafa Asad Eau de Parfum 100ml",
+    "categoria": "Masculino",
+    "img": "https://m.media-amazon.com/images/G/32/apparel/rcxgs/tile._CB483369971_.gif",
+    "descricao": "ff"
+  },
+  {
+    "id": 1454161,
+    "nome": "Lattafa Asad Bourbon Eau de Parfum - 100ml",
+    "categoria": "Masculino",
+    "img": "https://epocacosmeticos.vteximg.com.br/arquivos/ids/901968-450-450/17509435016690.jpg?v=638874878199500000",
+    "descricao": "ff"
+  }
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: blob:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; font-src *;"
+    />
+    <title>Painel Administrativo - Perfumes</title>
+    <link rel="stylesheet" href="/admin/admin.css" />
+    <script src="/admin/admin.js"></script>
+  </head>
+  <body>
+    <!-- ====== TOPO ====== -->
+    <div class="topbar">
+      <h1>Painel do Administrador</h1>
+      <button class="logout" id="btnLogout">Sair</button>
+    </div>
+
+    <!-- ====== CONTEÚDO ====== -->
+    <div class="container">
+      <!-- ========== CADASTRAR PERFUME ========== -->
+      <section class="card">
+        <h2>Adicionar Perfume</h2>
+        <div class="form-grid">
+          <input type="text" id="nome" placeholder="Nome do perfume" />
+          <input
+            type="text"
+            id="categoria"
+            placeholder="Categoria (ex: Feminino)"
+          />
+          <input type="text" id="img" placeholder="URL da imagem" />
+          <textarea id="descricao" placeholder="Descrição"></textarea>
+        </div>
+        <button class="btnAdicionar">Adicionar</button>
+      </section>
+
+      <!-- ========== FILTROS ========== -->
+      <section class="card filtros-card">
+        <h2>🔎 Filtros de Busca</h2>
+        <div class="filtros-box">
+          <input type="text" id="buscar" placeholder="Buscar perfume..." />
+          <select id="filtroCategoria">
+            <option value="">Todas categorias</option>
+          </select>
+          <select id="ordenar">
+            <option value="nomeA">Nome A → Z</option>
+            <option value="nomeZ">Nome Z → A</option>
+            <option value="idC">ID Crescente</option>
+            <option value="idD">ID Decrescente</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- ========== LISTA DE PERFUMES ========== -->
+      <section class="card">
+        <h2>Perfumes cadastrados</h2>
+        <div id="listaPerfumes" class="lista-perfumes">
+          <p class="loading">Carregando perfumes...</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- JS externo -->
+  </body>
+</html>

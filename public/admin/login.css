@@ -1,0 +1,117 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0c0c0d, #161618);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+/* ===== CONTAINER ===== */
+.login-container {
+    background: #141416;
+    padding: 45px 40px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.55);
+    border: 1px solid #2a2a2d;
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.login-container h2 {
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ===== INPUT ===== */
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px;
+    background: #0f0f11;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #eaeaea;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 10px rgba(108,92,231,0.4);
+}
+
+.input-box label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    color: #777;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+/* label flutuante */
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: -9px;
+    left: 8px;
+    font-size: 12px;
+    background: #141416;
+    padding: 0 5px;
+    color: #c1b6ff;
+}
+
+/* ===== BOTÃO ===== */
+#btn-login {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6c5ce7, #5849d8);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.25s;
+}
+
+#btn-login:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #7b6cf8, #6c5ce7);
+}
+
+/* ===== TEXTO EXTRA ===== */
+.creditos {
+    margin-top: 18px;
+    font-size: 13px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

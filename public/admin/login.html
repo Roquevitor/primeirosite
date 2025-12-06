@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Admin</title>
+
+    <!-- CSP ajustada para liberar scripts, styles e imagens externas -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https:;
+    connect-src 'self' https://imperiumparfumm.onrender.com https://imperiumparfumm-api.onrender.com;
+  "
+    />
+
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <div class="login-container">
+      <h2>🔐 Área Administrativa</h2>
+
+      <div class="input-box">
+        <input type="password" id="senha" required />
+        <label for="senha">Senha do administrador</label>
+      </div>
+
+      <button id="btn-login">Entrar</button>
+
+      <p class="creditos">Acesso restrito</p>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
