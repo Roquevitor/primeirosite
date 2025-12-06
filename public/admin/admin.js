@@ -102,7 +102,7 @@
 
         // Altera o botão para salvar edição
         const botao = document.getElementById("btnSalvarEdicao");
-        botao.display = "flex";
+        botao.style.display = "flex";
         botao.textContent = "Salvar Alterações";
 
         // Remove event listener anterior para não duplicar
