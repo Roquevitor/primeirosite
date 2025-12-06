@@ -43,6 +43,7 @@
     if (!container) return;
 
     container.innerHTML = "";
+
     if (!lista.length) {
       container.innerHTML = `<p>Nenhum perfume encontrado.</p>`;
       return;
@@ -64,10 +65,11 @@
           <button class="remover-btn" data-id="${p.id}">Remover</button>
         </div>
       `;
+
       container.appendChild(card);
     });
 
-    // ------------------ EVENTO REMOVER ------------------
+    // EVENTO REMOVER
     document.querySelectorAll(".remover-btn").forEach((btn) => {
       btn.addEventListener("click", async () => {
         const id = btn.dataset.id;
@@ -78,7 +80,9 @@
             method: "DELETE",
             credentials: "include",
           });
-          if (!resp.ok) throw new Error("Erro ao remover");
+
+          if (!resp.ok) throw new Error("Erro ao remover perfume");
+
           await carregarPerfumes();
         } catch (err) {
           console.error(err);
@@ -87,29 +91,28 @@
       });
     });
 
-    // ------------------ EVENTO EDITAR ------------------
+    // EVENTO EDITAR
     document.querySelectorAll(".editar-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         const id = btn.dataset.id;
-        const perfume = perfumes.find((p) => p.id == id);
+        const perfume = perfumes.find((x) => x.id == id);
         if (!perfume) return;
 
-        // Preenche o formulário de adicionar com os dados do perfume
         document.getElementById("nome").value = perfume.nome;
         document.getElementById("categoria").value = perfume.categoria;
         document.getElementById("descricao").value = perfume.descricao;
         document.getElementById("img").value = perfume.img;
 
-        // Altera o botão para salvar edição
         const botao = document.getElementById("btnSalvarEdicao");
+        if (!botao) return;
+
         botao.style.display = "flex";
         botao.textContent = "Salvar Alterações";
 
-        // Remove event listener anterior para não duplicar
-        const novoBotao = botao.cloneNode(true);
-        botao.parentNode.replaceChild(novoBotao, botao);
+        const novo = botao.cloneNode(true);
+        botao.parentNode.replaceChild(novo, botao);
 
-        novoBotao.addEventListener("click", async () => {
+        novo.addEventListener("click", async () => {
           const nome = document.getElementById("nome").value.trim();
           const categoria = document.getElementById("categoria").value.trim();
           const descricao = document.getElementById("descricao").value.trim();
@@ -126,9 +129,9 @@
               body: JSON.stringify({ nome, categoria, descricao, img }),
               credentials: "include",
             });
+
             if (!resp.ok) throw new Error("Erro ao editar perfume");
 
-            // Limpar formulário
             document.getElementById("nome").value = "";
             document.getElementById("categoria").value = "";
             document.getElementById("descricao").value = "";
@@ -145,9 +148,11 @@
     });
   }
 
-  // ------------------ CRUD ADICIONAR ------------------
-  document.querySelectorAll(".btnAdicionar").forEach((btn) => {
-    btn.addEventListener("click", async () => {
+  // ------------------ ADICIONAR PERFUME ------------------
+  const botaoAdd = document.querySelector(".btnAdicionar");
+
+  if (botaoAdd) {
+    botaoAdd.addEventListener("click", async () => {
       const nome = document.getElementById("nome").value.trim();
       const categoria = document.getElementById("categoria").value.trim();
       const descricao = document.getElementById("descricao").value.trim();
@@ -164,6 +169,7 @@
           body: JSON.stringify({ nome, categoria, descricao, img }),
           credentials: "include",
         });
+
         if (!resp.ok) throw new Error("Erro ao adicionar perfume");
 
         document.getElementById("nome").value = "";
@@ -178,7 +184,7 @@
         alert("Erro ao adicionar perfume");
       }
     });
-  });
+  }
 
   // ------------------ FILTROS ------------------
   function preencherCategorias() {
@@ -188,6 +194,7 @@
     const categorias = [
       ...new Set(perfumes.map((p) => p.categoria || "Sem Categoria")),
     ];
+
     select.innerHTML = `<option value="">Todas categorias</option>`;
     categorias.forEach((cat) => {
       select.innerHTML += `<option value="${cat}">${cat}</option>`;
@@ -218,7 +225,7 @@
     renderizar(filtrados);
   }
 
-  // ------------------ EVENTOS ------------------
+  // ------------------ EVENTOS GLOBAIS ------------------
   await verificarLogin();
   await carregarPerfumes();
 
