@@ -166,7 +166,6 @@
         });
         if (!resp.ok) throw new Error("Erro ao adicionar perfume");
 
-        // Limpar formulário
         document.getElementById("nome").value = "";
         document.getElementById("categoria").value = "";
         document.getElementById("descricao").value = "";
