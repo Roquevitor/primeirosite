@@ -3,174 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imperium Parfum</title>
-
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Imperium Parfum - Fragrâncias Exclusivas</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-
   <body>
-    <div class="site">
-      <!-- ================= CABEÇALHO ================= -->
-      <header class="header">
-        <div class="desktop-logo">
-          <img
-            src="/img/Logocobre.png"
-            alt="Brasão do Imperium"
-            width="200"
-            height="50"
-          />
-          <img
-            class="mobile-logo"
-            src="/img/Brasaocobre.png"
-            alt="Brasão Mobile"
-            width="100"
-            height="100"
-          />
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="desktop-logo">
+        <img
+          src="/img/Logocobre.png"
+          alt="Imperium Parfum"
+          width="200"
+          height="50"
+        />
+      </div>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="icons">
+        <a
+          href="https://instagram.com/imperiumparfumm"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram" style="color: #d83cff"></i>
+        </a>
+        <a
+          href="https://wa.me/5573999786050"
+          target="_blank"
+          aria-label="WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp" style="color: #13ea59"></i>
+        </a>
+        <div class="cart" id="cartBtn" aria-label="Carrinho de compras">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
         </div>
+      </div>
+    </header>
 
-        <nav class="menu">
-          <a href="#">Início</a>
-          <a href="#catalogo">Catálogo</a>
-          <a href="#contato">Contato</a>
-        </nav>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="desktop-logo1">
+        <img class="logimg" src="/img/Logocobre.png" alt="Imperium Parfum" />
+      </div>
+      <p>
+        Fragrâncias marcantes para quem deseja deixar sua presença registrada.
+      </p>
+      <a class="cta" href__="#catalogo">
+        <span>Ver Catálogo</span>
+        <i class="fas fa-arrow-down" style="font-size: 0.875rem"></i>
+      </a>
+    </section>
 
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
+    <!-- Filtros -->
+    <section class="filters container">
+      <div class="filter-box">
+        <select id="categoria" aria-label="Filtrar por categoria">
+          <option value="">Todas as categorias</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Unissex">Unissex</option>
+        </select>
+        <input
+          id="buscar"
+          type="text"
+          placeholder="Pesquisar perfume..."
+          aria-label="Buscar produtos"
+        />
+      </div>
+    </section>
 
-        <div class="icons">
-          <a
-            href="https://instagram.com/imperiumparfumm"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <i class="fa-brands fa-instagram" style="color: #d83cff"></i>
-          </a>
-          <a
-            href="https://wa.me/5573999786050"
-            target="_blank"
-            aria-label="WhatsApp"
-          >
-            <i class="fa-brands fa-whatsapp" style="color: #13ea59"></i>
-          </a>
+    <!-- Catálogo -->
+    <main class="container" id="catalogo">
+      <div id="grid" class="products-grid"></div>
+      <div class="buttonNextPrev" id="pagination">
+        <button class="prev" id="prevBtn">
+          <i class="fas fa-chevron-left" style="margin-right: 8px"></i>
+          Anterior
+        </button>
+        <span
+          id="pageInfo"
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            color: var(--text-secondary);
+            font-weight: 600;
+          "
+        ></span>
+        <button class="next" id="nextBtn">
+          Próxima
+          <i class="fas fa-chevron-right" style="margin-left: 8px"></i>
+        </button>
+      </div>
+    </main>
 
-          <div class="cart" aria-label="Carrinho de compras">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span class="cart-count">0</span>
-          </div>
-        </div>
-      </header>
+    <!-- Contato -->
+    <section class="contato container" id="contato">
+      <h2>Entre em Contato</h2>
+      <div class="contato-info">
+        <p><i class="fa-solid fa-phone"></i> ‪+55 73 99978-6050‬</p>
+        <a href="https://wa.me/5573999786050" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+        <a href="https://instagram.com/imperiumparfumm" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+          @imperiumparfumm
+        </a>
+      </div>
+    </section>
 
-      <!-- ================= HERO ================= -->
-      <section class="hero">
-        <div class="desktop-logo1">
-          <img class="logimg"
-            src="/img/Logocobre.png"
-            alt="Brasão do Imperium"
-          />
-        <p>
-          Fragrâncias marcantes para quem deseja deixar sua presença registrada.
-        </p>
-        <a class="cta" href="#catalogo">Ver Catálogo</a>
-      </section>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Imperium Parfum — Todos os direitos reservados.</p>
+      <p>
+        Siga-nos nas redes sociais:
+        <a href="https://instagram.com/imperiumparfumm" target="_blank"
+          >Instagram</a
+        >
+        |
+        <a href="https://wa.me/5573999786050" target="_blank">WhatsApp</a>
+      </p>
+    </footer>
 
-      <!-- ================= FILTROS ================= -->
-      <section class="filters container">
-        <div class="filter-box">
-          <select id="categoria">
-            <option value="">Todas as categorias</option>
-            <option value="Masculino">Masculino</option>
-            <option value="Feminino">Feminino</option>
-            <option value="Unissex">Unissex</option>
-          </select>
-          <input id="buscar" type="text" placeholder="Pesquisar perfume..." />
-        </div>
-      </section>
-
-      <!-- ================= CATÁLOGO ================= -->
-      <main class="container" id="catalogo">
-        <div id="grid" class="products-grid"></div>
-        <div class="buttonNextPrev">
-          <button class="prev">&lt;</button>
-          <button class="next">&gt;</button>
-        </div>
-      </main>
-
-      <!-- ================= CONTATO ================= -->
-      <section class="contato container" id="contato">
-        <h2>Entre em Contato</h2>
-        <div class="contato-info">
-          <p><i class="fa-solid fa-phone"></i> +55 73 99978-6050</p>
-          <p>
-            <i class="fa-brands fa-whatsapp"></i>
-            <a
-              href="https://wa.me/5573999786050"
-              target="_blank"
-              style="color: var(--muted); text-decoration: none"
-              >WhatsApp</a
-            >
-          </p>
-          <p>
-            <i class="fa-brands fa-instagram"></i>
-            <a
-              href="https://instagram.com/imperiumparfumm"
-              target="_blank"
-              style="color: var(--muted); text-decoration: none"
-            >
-              @imperiumparfumm</a
-            >
-          </p>
-          <!--<p><i class="fa-solid fa-envelope"></i>imperiumparfum.com</p>-->
-        </div>
-      </section>
-
-      <!-- ================= RODAPÉ ================= -->
-      <footer>
-        <p>© 2025 Imperium Parfum — Todos os direitos reservados.</p>
-        <p>
-          Siga-nos nas redes sociais:
-          <a
-            href="https://instagram.com/imperiumparfumm"
-            target="_blank"
-            style="color: var(--gold)"
-          >
-            Instagram</a
-          >
-          |
-          <a
-            href="https://wa.me/5511999999999"
-            target="_blank"
-            style="color: var(--gold)"
-          >
-            WhatsApp</a
-          >
-        </p>
-      </footer>
-    </div>
-
-    <!-- ================= NOTIFICAÇÃO ================= -->
+    <!-- Notificação -->
     <div id="notificacao" class="notificacao"></div>
 
-    <!-- ================= MODAL DO CARRINHO ================= -->
+    <!-- Modal Carrinho -->
     <div id="modalCarrinho" class="modal-carrinho">
       <div class="conteudo-carrinho">
-        <h2>Seu Carrinho</h2>
+        <h2>🛍️ Seu Carrinho</h2>
         <ul id="listaCarrinho"></ul>
-        <button id="finalizarCompraBtn" class="btn">Fazer pedido</button>
-        <button class="fecharCarrinhoBtn">Fechar</button>
+        <div
+          style="
+            padding: 16px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.02);
+          "
+        >
+          <div
+            id="cartTotal"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 16px;
+              font-size: 1.125rem;
+              font-weight: 600;
+            "
+          >
+            <span style="color: var(--neutral-300)">Total de itens:</span>
+            <span style="color: var(--copper-400)">0</span>
+          </div>
+        </div>
+        <button id="finalizarCompraBtn">
+          <i class="fa-brands fa-whatsapp" style="margin-right: 8px"></i>
+          Fazer Pedido no WhatsApp
+        </button>
+        <button class="fecharCarrinhoBtn" id="fecharCarrinhoBtn">Fechar</button>
       </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
