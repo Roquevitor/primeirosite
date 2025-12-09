@@ -63,6 +63,7 @@ body {
 ================================== */
 .card {
   display: flex;
+  width: 90%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -187,7 +188,7 @@ input:focus, textarea:focus, select:focus {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   align-items: center;
   transition: 0.2s;
 }

@@ -61,7 +61,7 @@
           <b>${p.nome}</b><br>
           <small>ID: ${p.id}</small>
           <p>${p.descricao}</p>
-          <button class="editar-btn" data-id="${p.id}">Editar</button>
+          <button class="editar-btn" href="#nome" data-id="${p.id}">Editar</button>
           <button class="remover-btn" data-id="${p.id}">Remover</button>
         </div>
       `;
