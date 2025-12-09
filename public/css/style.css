@@ -896,8 +896,8 @@ footer a:hover {
     .products-grid { gap: var(--space-4); }
     .notificacao { right: var(--space-4); left: var(--space-4); min-width: auto; }
     img{
-
-        display: none;
+        width: 100px;;
+        
     }
     .prev{
         width: auto;
