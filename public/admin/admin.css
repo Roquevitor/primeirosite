@@ -62,6 +62,7 @@ body {
    CARDS
 ================================== */
 .card {
+
   display: flex;
   width: 90%;
   flex-direction: column;
@@ -84,13 +85,13 @@ body {
 .form-grid {
   display: flex;
   flex-direction: column;
-  grid-template-columns: 1fr 1fr;
+  width: 90%;
   gap: 12px;
-  margin-bottom: 15px;
+
 }
 
 textarea {
-  grid-column: span 2;
+  grid-column: span 1;
   resize: none;
   min-height: 80px;
 }
@@ -164,6 +165,7 @@ input:focus, textarea:focus, select:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  width: 90%;
 }
 
 .filtros-box > * {
@@ -177,7 +179,10 @@ input:focus, textarea:focus, select:focus {
 .lista-perfumes {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
 }
 
 .perfume-item {
@@ -190,6 +195,7 @@ input:focus, textarea:focus, select:focus {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  text-align: center;
   transition: 0.2s;
 }
 
